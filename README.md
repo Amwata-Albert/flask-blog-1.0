@@ -5,8 +5,7 @@
 ## Description
 This is an online platform where a user can write his own blogs, read blogs from other users, comment on blogs as well as maintain their own profiles by deleting personal blog articles or deleting comments on their own blogs.
 #### Link to deployed site
-https://jamesmutahiflaskblog.herokuapp.com/
-
+https://amwata-albert.github.io/flask-blog-1.0/
 ## Table of content
 1. [Description](#description)
 2. [Setup and installations](#setup-and-installations)
@@ -41,7 +40,7 @@ https://jamesmutahiflaskblog.herokuapp.com/
 
 #### Clone the Repo and rename it to suit your needs.
 ```bash
-git clone https://github.com/JamesMutahi/flask-blog.git
+git clone https://amwata-albert.github.io/flask-blog-1.0/
 ```
 #### Initialize git and add the remote repository
 ```bash
@@ -53,7 +52,7 @@ git remote add origin <your-repository-url>
 
 #### Create and activate the virtual environment
 ```bash
-python3.6 -m virtualenv virtual
+python3.8 -m virtualenv virtual
 ```
 
 ```bash
@@ -73,12 +72,12 @@ Install dependancies that will create an environment for the app to run
 
 #### Make and run migrations
 ```bash
-python3.6 manage.py makemigrations && python3.6 manage.py migrate
+python3.8 manage.py makemigrations && python3.8 manage.py migrate
 ```
 
 #### Run the app
 ```bash
-python3.6 manage.py runserver
+python3.8 manage.py runserver
 ```
 Open [localhost:5000](http://127.0.0.1:5000/)
 
@@ -95,9 +94,9 @@ Create an issue mentioning the bug you have found
 
 
 ## Support and contact details
-Contact [James Mutahi](mutahijames0@gmail.com) for further help/support
+Contact [James Mutahi](albertotieno412gmail.com) for further help/support
 
 ### License
 [MIT LICENSE](LICENCE)
 
-Copyright (c)2018 **James Mutahi**
+Copyright (c)2020 **Amwata Albert**
