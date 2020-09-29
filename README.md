@@ -94,7 +94,7 @@ Create an issue mentioning the bug you have found
 
 
 ## Support and contact details
-Contact [James Mutahi](albertotieno412gmail.com) for further help/support
+Contact [Amwata Albert](albertotieno412gmail.com) for further help/support
 
 ### License
 [MIT LICENSE](LICENCE)
