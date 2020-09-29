@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="flex-center flex-column">
+    <a href="{{ url_for('new_comment') }}">
+        <button type="button" class="btn btn-blue-grey">
+        <i class="fas fa-plus-circle mr-2"></i>
+       ADD COMMENT
+    </button>
+    </a>
+</div>
+    {% for comment in comments.items %}
+        <article class="media content-section">
+          <img class="rounded-circle article-img" src="{{ url_for('static', filename='profile_pics/' + comment.authorComment.image_file) }}">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="{{ url_for('user_comments', username=comments.authorComment.username) }}">{{ comment.authorComment.username }}</a>
+              <small class="text-muted">{{ comment.date_posted.strftime('%Y-%m-%d') }}</small>
+            </div>
+            <h2><a class="article-title" href="{{ url_for('comment', comment_id=comment.id) }}">{{ comment.title }}</a></h2>
+            <p class="article-content">{{ comment.comment }}</p>
+          </div>
+        </article>
+    {% endfor %}
+    {% endblock content %}

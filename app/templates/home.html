@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+{% block content %}
+<!-- Main navigation -->
+    <header>
+
+        <!-- Full Page Intro -->
+        <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('https://images.pexels.com/photos/2234783/pexels-photo-2234783.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+                <!-- Content -->
+                <div class="container">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-md-12 mb-4 white-text text-center">
+	                        <h5 class="card-title">{{quotes.quote}}</h5>
+        <hr>
+        <!-- Quotation -->
+        <p><i class="fas fa-quote-left"></i>{{quotes.author}}</p>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </div>
+                <!-- Content -->
+            </div>
+            <!-- Mask & flexbox options-->
+        </div>
+        <!-- Full Page Intro -->
+    </header>
+
+
+    <!-- Main navigation -->
+{% endblock %}
